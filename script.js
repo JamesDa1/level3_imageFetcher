@@ -4,7 +4,6 @@ const checkBlur = document.querySelector("#blur");
 fetchImgBtn.addEventListener("click", () => {
   let width = document.querySelector("#width").value;
   let height = document.querySelector("#height").value;
-  console.log(width, height);
   // checks for black/white option
   let grayScaleActive = document.querySelector("#grayScale").checked
     ? "?grayscale"
@@ -21,7 +20,7 @@ fetchImgBtn.addEventListener("click", () => {
   }
 
   let link = `https://picsum.photos/${width}/${height}${grayScaleActive}${blurCode}`;
-
+  console.log(link);
   fetch(link).then((response) => {
     let img = document.createElement("img");
     img.src = response.url;
