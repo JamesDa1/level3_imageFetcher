@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #392f5a;
+  color: white;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#images {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
