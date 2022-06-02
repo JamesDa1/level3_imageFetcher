@@ -9,6 +9,8 @@ fetchImgBtn.addEventListener("click", () => {
     ? "?grayscale"
     : "";
 
+  // Couldn't figure out how to add BlurCode as a ternary operator
+  // Modifies URL to add grayScale and Blur if selected
   let blurCode = "";
   if (checkBlur.checked) {
     let blurStrength = document.querySelector("#blurIntensity").value;
@@ -27,3 +29,10 @@ fetchImgBtn.addEventListener("click", () => {
     document.querySelector("#images").appendChild(img);
   });
 });
+
+// Deletes clicked img element
+window.onclick = event => {
+  if (event.target.tagName === "IMG") {
+    event.target.remove()
+  }
+}
