@@ -12,6 +12,14 @@ header {
   text-align: center;
   margin-bottom: 2rem;
 }
+header h1 {
+  margin-bottom: 0;
+  color: tomato;
+}
+header p {
+  margin-top: 0;
+  color: white;
+}
 
 #images {
   width: 90%;
