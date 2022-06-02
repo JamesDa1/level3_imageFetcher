@@ -21,3 +21,7 @@ header {
   flex-wrap: wrap;
   gap: 5px;
 }
+
+#images img {
+  border-radius: 6px;
+}
